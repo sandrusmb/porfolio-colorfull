@@ -1,2 +1,32 @@
 .header {
+  background: $yellow;
+  width: 100vw;
+
+  &__container {
+    &__h1 {
+      border: 3px solid red;
+      margin: 0px;
+      font-family: $title;
+      color: $blue;
+      font-size: 45px;
+      text-align: center;
+    }
+
+    &__nav {
+      border: 3px solid blue;
+      background: $blue;
+      color: $white;
+      font-family: $font;
+
+      &__ul {
+        border: 1px solid orange;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 20px;
+        padding: 0px;
+      }
+    }
+  }
 }
