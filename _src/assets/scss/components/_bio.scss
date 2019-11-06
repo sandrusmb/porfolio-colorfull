@@ -1,0 +1,33 @@
+.bio {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      width: 75px;
+      height: 80px;
+      border-radius: 50%;
+      background: $pink;
+      margin: 20px 0;
+    }
+    &__h1 {
+      font-family: $title;
+      font-weight: 50;
+      color: $blue;
+      text-align: center;
+      font-size: 40px;
+    }
+
+    &__h2 {
+      font-family: $font;
+      text-transform: uppercase;
+      font-size: 16px;
+      padding: 30px;
+      font-weight: 500;
+      width: 350px;
+      text-align: center;
+      color: $blue;
+    }
+  }
+}
