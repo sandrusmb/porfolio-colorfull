@@ -1,22 +1,45 @@
 .bio {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  @media all and (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__container {
     &__img {
-      width: 75px;
-      height: 80px;
+      width: 90px;
+      height: 95px;
       border-radius: 50%;
-      background: $pink;
-      margin: 20px 0;
+      background: $yellow;
+      margin: 20px 30px 10px 0px;
+
+      @media all and (min-width: 768px) {
+        width: 140px;
+        height: 150px;
+      }
     }
+  }
+
+  &__container2 {
+    @media all and (min-width: 768px) {
+      margin-top: 10px;
+      margin-left: 20px;
+    }
+
     &__h1 {
       font-family: $title;
       font-weight: 50;
       color: $blue;
       text-align: center;
-      font-size: 40px;
+      font-size: 30px;
+
+      @media all and (min-width: 768px) {
+        font-size: 40px;
+        text-align: left;
+      }
     }
 
     &__h2 {
@@ -28,6 +51,10 @@
       width: 350px;
       text-align: center;
       color: $blue;
+
+      @media all and (min-width: 768px) {
+        text-align: left;
+      }
     }
   }
 }
