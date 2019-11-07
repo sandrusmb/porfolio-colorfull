@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  width: 100%;
   position: fixed;
 
   &__container {
@@ -10,6 +10,7 @@
     }
 
     &__h1 {
+      border: 1px solid blue;
       font-family: $title;
       color: $blue;
       font-size: 50px;
@@ -17,10 +18,16 @@
       background: $yellow;
       padding: 10px 0 10px 0;
       font-weight: 100;
+      position: fixed;
+      width: 100%;
 
       @media all and (min-width: 768px) {
         text-align: left;
         padding: 20px 0px 20px 50px;
+        position: fixed;
+      }
+      @media all and (min-width: 1200px) {
+        padding-left: 10%;
       }
     }
 
@@ -31,10 +38,18 @@
       padding: 10px 0 10px 0;
       position: fixed;
       width: 100%;
+      margin-top: 90px;
 
       @media all and (min-width: 768px) {
+        border: 1px solid red;
         background: $yellow;
-        width: 350px;
+        width: 50%;
+        margin: 0px;
+        margin-left: 50%;
+      }
+      @media all and (min-width: 1200px) {
+        max-width: 30%;
+        margin-left: 60%;
       }
 
       &__ul {
