@@ -14,18 +14,20 @@
       height: 95px;
       border-radius: 50%;
       background: $yellow;
-      margin: 20px 30px 10px 0px;
+      margin: 180px 30px 10px 0px;
 
       @media all and (min-width: 768px) {
         width: 140px;
         height: 150px;
+        margin-bottom: 50px;
       }
     }
   }
 
   &__container2 {
     @media all and (min-width: 768px) {
-      margin-top: 10px;
+      border: 1px solid red;
+      margin-top: 140px;
       margin-left: 20px;
     }
 

@@ -1,5 +1,6 @@
 .header {
   width: 100vw;
+  position: fixed;
 
   &__container {
     background: $yellow;
@@ -28,6 +29,8 @@
       color: $white;
       font-family: $font;
       padding: 10px 0 10px 0;
+      position: fixed;
+      width: 100%;
 
       @media all and (min-width: 768px) {
         background: $yellow;
