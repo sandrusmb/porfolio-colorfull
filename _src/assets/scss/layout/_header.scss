@@ -10,7 +10,6 @@
     }
 
     &__h1 {
-      border: 1px solid blue;
       font-family: $title;
       color: $blue;
       font-size: 50px;
@@ -32,6 +31,7 @@
     }
 
     &__nav {
+      border-bottom: 1px solid white;
       background: $blue;
       color: $white;
       font-family: $font;
@@ -41,15 +41,16 @@
       margin-top: 90px;
 
       @media all and (min-width: 768px) {
-        border: 1px solid red;
         background: $yellow;
         width: 50%;
         margin: 0px;
         margin-left: 50%;
+        border: none;
       }
       @media all and (min-width: 1200px) {
         max-width: 30%;
         margin-left: 60%;
+        border: none;
       }
 
       &__ul {
