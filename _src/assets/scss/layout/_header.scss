@@ -1,78 +1,64 @@
 .header {
-  width: 100%;
   position: fixed;
 
   &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: $yellow;
+    width: 100vw;
+    height: 100px;
+    border-bottom: 1px solid $white;
+
     @media all and (min-width: 768px) {
-      display: flex;
+      flex-direction: row;
       justify-content: space-between;
     }
 
     &__h1 {
+      background: $yellow;
       font-family: $title;
       color: $blue;
       font-size: 50px;
-      text-align: center;
-      background: $yellow;
-      padding: 10px 0 10px 0;
-      font-weight: 100;
-      position: fixed;
+      font-weight: 50;
       width: 100%;
+      text-align: center;
 
       @media all and (min-width: 768px) {
-        text-align: left;
-        padding: 20px 0px 20px 50px;
-        position: fixed;
-      }
-      @media all and (min-width: 1200px) {
-        padding-left: 10%;
+        font-size: 40px;
+        font-weight: 50;
       }
     }
 
     &__nav {
-      border-bottom: 1px solid white;
-      background: $blue;
-      color: $white;
-      font-family: $font;
-      padding: 10px 0 10px 0;
-      position: fixed;
       width: 100%;
-      margin-top: 90px;
-
-      @media all and (min-width: 768px) {
-        background: $yellow;
-        width: 50%;
-        margin: 0px;
-        margin-left: 50%;
-        border: none;
-      }
-      @media all and (min-width: 1200px) {
-        max-width: 30%;
-        margin-left: 60%;
-        border: none;
-      }
 
       &__ul {
         list-style: none;
         display: flex;
         flex-direction: row;
+        align-items: center;
         justify-content: space-between;
-        margin: 10px 50px;
-        padding: 0px;
-        text-transform: uppercase;
+        background: $blue;
+        font-size: 18px;
+        color: $white;
+        padding-left: 25%;
+        padding-right: 25%;
+        height: 40px;
+        border-bottom: 1px solid $white;
 
         @media all and (min-width: 768px) {
-          justify-content: space-between;
+          padding-right: 15%;
+          margin: 0;
+          background: $yellow;
           color: $blue;
-          margin-right: 50px;
-          font-weight: 500;
-          margin-top: 40px;
+          border: none;
         }
-      }
-      .li {
-        &:hover {
-          color: $pink;
+
+        .li {
+          &:hover {
+            color: $pink;
+          }
         }
       }
     }
